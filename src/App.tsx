@@ -1,33 +1,31 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { useEffect, useState } from 'react';
 import viteLogo from '/vite.svg';
+import { CalciteShell } from '@esri/calcite-components-react';
+import Map from '@arcgis/core/Map';
+import MapView from '@arcgis/core/views/MapView';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [mapView, setMapView] = useState<MapView | null>(null);
+
+  useEffect(() => {
+    const map = new Map({
+      basemap: 'dark-gray-vector',
+    });
+
+    const view = new MapView({
+      map,
+      container: 'map',
+      center: [-92.1005, 46.7867],
+      zoom: 12,
+    });
+
+    setMapView(view);
+  }, []);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>ArcGIS + Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <CalciteShell className="calcite-mode-dark">
+      <div id="map" className="absolute inset-0" />
+    </CalciteShell>
   );
 }
 
