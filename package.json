@@ -1,7 +1,11 @@
 {
   "name": "create-arcgis-react",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samMatenaer/create-arcgis-react"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

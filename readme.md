@@ -4,6 +4,10 @@ Create React apps with ArcGIS pre-configured.
 
 ## Get Started
 
+### GitHub Template
+- To quickly create a new GitHub repo
+   - https://github.com/samMatenaer/create-arcgis-react/generate
+
 
 ## Included tools
 - React + Typescript
