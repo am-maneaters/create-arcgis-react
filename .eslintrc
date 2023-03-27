@@ -6,8 +6,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "sem"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -24,9 +23,7 @@
       "parserOptions": {
         "project": "./tsconfig.node.json"
       },
-      "rules": {
-        "unicorn/error-message": 0
-      }
+      "rules": {}
     }
   ]
 }
