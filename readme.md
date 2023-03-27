@@ -6,14 +6,14 @@
 <h2>Create ArcGIS React App</h2>
 </div>
 
-Create React apps with ArcGIS pre-configured.
+Quickly set up a new project using React + ArcGIS Maps SDK! This template comes bundled with a few common dev tools to help get you up and running in no time.
 
+- ⚛️ React
+- 🔑 Typescript
+- 🗺 ArcGIS Maps SDK for JS
 - ⚡️ Vite
 - 🎨 Tailwind
 - 🧱 Calcite Components
-- ⚛️ React
-- 🗺 ArcGIS Maps SDK for JS
-- 🔑 Typescript
 - 🧹 ESLint
 
 
@@ -22,5 +22,5 @@ Create React apps with ArcGIS pre-configured.
 
 
 ### GitHub Template
-- To quickly create a new GitHub repo
+- Generate a new GitHub repo using the template
    - https://github.com/samMatenaer/create-arcgis-react/generate
