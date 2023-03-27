@@ -1,23 +1,20 @@
-# Create ArcGIS React
+# Create ArcGIS React App
 
 Create React apps with ArcGIS pre-configured.
 
+- ⚡️ Vite
+- 🎨 Tailwind
+- 🧱 Calcite Components
+- ⚛️ React
+- 🗺 ArcGIS Maps SDK for JS
+- 🔑 Typescript
+- 🧹 ESLint
+
+
 ## Get Started
+
+
 
 ### GitHub Template
 - To quickly create a new GitHub repo
    - https://github.com/samMatenaer/create-arcgis-react/generate
-
-
-## Included tools
-- React + Typescript
-- ArcGIS Maps SDK for JS
-- Calcite Components React
-    - Includes configuration
-- Tailwind
-    - Extends the Calcite Components Tailwind configuration
-- Vite
-    - Uses `rollup-plugin-copy` to copy Calcite Component assets
-- eslint
-
-
